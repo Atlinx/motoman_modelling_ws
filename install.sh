@@ -16,5 +16,13 @@ tar -xf blender-3.1.2-linux-x64.tar.xz
 rm -f blender-3.1.2-linux-x64.tar.xz
 mv blender-3.1.2-linux-x64 $WORKSPACE_ROOT/src
 
-BLENDER_ADDONS_DIR="$WORKSPACE_ROOT/src/blender-3.1.2-linux-x64/3.1/scripts/addons"
-ln -sfn "$WORKSPACE_ROOT/src/urdf_importer/urdf_importer_addon" "$BLENDER_ADDONS_DIR/urdf_importer_addon"
+BLENDER_DIR="$WORKSPACE_ROOT/src/blender-3.1.2-linux-x64"
+cd $BLENDER_DIR/3.1/python/bin
+./python3.10 -m ensurepip
+./python3.10 -m pip install --upgrade pip
+./python3.10 -m pip install pyyaml
+./python3.10 -m pip install rospkg
+./python3.10 -m pip install urdf_parser_py
+
+cd $WORKSPACE_ROOT
+ln -sfn "$WORKSPACE_ROOT/src/urdf_importer/urdf_importer_addon" "$BLENDER_DIR/3.1/scripts/addons/urdf_importer_addon"
