@@ -1,0 +1,5 @@
+src/blender*
+.catkin_tools
+build
+devel
+logs

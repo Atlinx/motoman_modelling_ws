@@ -1,0 +1,6 @@
+[submodule "src/motoman"]
+	path = src/motoman
+	url = https://github.com/atlinx/motoman
+[submodule "src/urdf_importer"]
+	path = src/urdf_importer
+	url = https://github.com/HoangGiang93/urdf_importer

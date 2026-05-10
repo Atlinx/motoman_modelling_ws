@@ -1,0 +1,10 @@
+{
+    "terminal.integrated.profiles.linux": {
+        "ROS bash": {
+            "path": "/usr/bin/bash",
+            "args": ["--init-file", "${workspaceFolder}/.vscode/init_ros_bash.sh", "-i"],
+            "overrideName": true
+        },
+    },
+    "terminal.integrated.defaultProfile.linux": "ROS bash"
+}
