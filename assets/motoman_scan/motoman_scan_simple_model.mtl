@@ -1,0 +1,13 @@
+#
+# Wavefront material file
+# Created in RealityScan
+# Engine version v2.1.1.119166
+#
+
+newmtl motoman_scan_simple_model
+Ka 1 1 1
+Kd 1 1 1
+d 1
+Ns 0
+illum 1
+map_Kd motoman_scan_simple_model_u0_v0_diffuse.png
